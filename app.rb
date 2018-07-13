@@ -29,13 +29,13 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     @operation = params[:operation]
     case @operation
-    when "+"
+    when "add"
       "#{params[:number1].to_i + params[:number2].to_i}"
-    when "-"
+    when "subtract"
       "#{params[:number1].to_i - params[:number2].to_i}"
-    when "*"
+    when "multiply"
       "#{params[:number1].to_i * params[:number2].to_i}"
-    when "/"
+    when "divide"
       "#{params[:number1].to_i / params[:number2].to_i}"
     else
       "#{@operation}"

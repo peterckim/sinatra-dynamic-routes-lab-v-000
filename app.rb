@@ -19,9 +19,9 @@ class App < Sinatra::Base
     
     "#{@number}"
     
-    @number.to_i.times do
-      "#{@phrase}\n"
-    end
+    # @number.to_i.times do
+    #   "#{@phrase}\n"
+    # end
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do

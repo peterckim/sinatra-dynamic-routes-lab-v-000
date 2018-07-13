@@ -38,7 +38,7 @@ class App < Sinatra::Base
     when "/"
       "#{params[:number1].to_i / params[:number2].to_i}"
     else
-      "HI"
+      "#{@operation}"
     end
     
   end
